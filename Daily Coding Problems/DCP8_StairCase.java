@@ -10,7 +10,8 @@ For example, if N is 4, then there are 5 unique ways:
 1, 2, 1
 1, 1, 2
 2, 2
-
+* @author Aditya Pathak
+ * @since 08.08.2020
 
 */
 
