@@ -10,7 +10,8 @@ For example, given array = [10, 5, 2, 7, 8, 7] and k = 3, we should get: [10, 7,
 8 = max(2, 7, 8)
 8 = max(7, 8, 7)
 
-
+* @author Aditya Pathak
+ * @since 09.08.2020
 */
 
 import java.util.*;
