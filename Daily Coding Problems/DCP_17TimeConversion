@@ -1,0 +1,29 @@
+/*
+Given a time in -hour AM/PM format, convert it to military (24-hour) time.
+
+Note: Midnight is 12:00:00AM on a 12-hour clock, and 00:00:00 on a 24-hour clock. 
+Noon is 12:00:00PM on a 12-hour clock, and 12:00:00 on a 24-hour clock.
+Convert and print the given time in -hour format, where .
+*/
+static String timeConversion(String s) {
+        int n=10;
+        int hours=Integer.parseInt(s.substring(0,2));
+        String minsec=s.substring(3,8);
+        
+        char[] arr=s.toCharArray();
+        if(arr[8]=='P'){
+            if(hours!=12)
+                return ((hours+12)+":"+minsec);
+            else
+                return ("12:"+minsec);
+        }
+        else{
+            if(hours<10)
+                return ("0"+hours+":"+minsec);
+            else
+                if(hours!=12)
+                return (hours+":"+minsec);
+                else 
+                 return ("00:"+minsec);
+        }
+    }
