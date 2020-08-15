@@ -55,7 +55,6 @@ Explanation
 
 There are 50 valid permutations viz. {1,1}, {1, 3},.. {1, 9} {2,2}, {2, 4},... {2, 10} . . . {10, 2}, {10, 4},... {10, 10}. These 50 permutations, each sum up to an even number.
 
-
 import java.io.*;
 
 import java.util.*;
@@ -75,7 +74,7 @@ static void printAllKLengthRec(int[] set,
 	int sum=0;
 	if (k == 0) 
 	{ 	sum=0;
-		//System.out.println(prefix);
+	//	System.out.println(prefix);
      
       	for(int i=0; i<prefix.length(); i++) {
     char temp = prefix.charAt(i);
@@ -107,7 +106,10 @@ public static void main(String[] args)
 	Scanner sc=new Scanner(System.in); 
   	int lower=sc.nextInt();
   	int upper=sc.nextInt();
-  	int n=upper-(lower+1);
+  //	System.out.println("lower"+lower);
+  //	System.out.println("upper"+upper);
+  	int n=upper-(lower-1);
+  //	System.out.println("n"+n);
   	int[] set1=new int[n];
   for(int i=0;i<n;i++){
     set1[i]=lower;
@@ -115,9 +117,8 @@ public static void main(String[] args)
   }
 	int k = sc.nextInt(); 
 	printAllKLength(set1, k); 
-  System.out.println("First Test");
-	System.out.println(GFG.count);
+ // System.out.println("First Test");
+	System.out.print(GFG.count);
 	
 } 
 } 
-
