@@ -1,0 +1,10 @@
+https://www.hackerrank.com/challenges/30-data-types/problem
+int a=sc.nextInt();
+    double b=sc.nextDouble();
+    String c = sc.next();  // reads the next token  
+      c += sc.nextLine();  
+        /* Read and save an integer, double, and String to your variables.*/
+        // Note: If you have trouble reading the entire String, please go back and review the Tutorial closely.
+        System.out.println(i+a);
+        System.out.println(d+b);
+        System.out.println(s+c);
