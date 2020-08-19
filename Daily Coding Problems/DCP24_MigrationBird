@@ -1,0 +1,38 @@
+/*
+https://www.hackerrank.com/challenges/migratory-birds/problem
+*/
+
+static int migratoryBirds(List<Integer> arr) {
+        int[] value=new int[5];
+        int n;
+        for(int i=0;i<arr.size();i++){
+
+        n=arr.get(i);
+        switch(n){
+            case 1 : value[0]+=1;
+                        break;
+            
+            case 2 : value[1]+=1;
+                        break;
+            
+            case 3 : value[2]+=1;
+                        break;
+            
+            case 4 : value[3]+=1;
+                        break;
+            
+            case 5 : value[4]+=1;
+                        break;     
+            default : break;                                                       
+        }
+        }
+        int num=0;
+        int max=value[0];
+        for(int i=1;i<5;i++){
+            if(value[i]>max){
+                max=value[i];
+                num=i+1;
+            }
+        }
+    return num;
+    }
