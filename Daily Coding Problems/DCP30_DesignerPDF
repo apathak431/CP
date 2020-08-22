@@ -1,0 +1,18 @@
+/*
+https://www.hackerrank.com/challenges/designer-pdf-viewer/problem
+*/
+
+static int designerPdfViewer(int[] h, String word) {
+        int n=word.length();
+        char[] wordar=word.toCharArray();
+        int ascii=(int) wordar[0];
+        int max=h[ascii-97];
+        for(int i=1;i<n;i++){
+            ascii=(int) wordar[i];
+            if(h[ascii-97]>max){
+                max=h[ascii-97];
+            }
+        }
+        return max*n;
+
+    }
