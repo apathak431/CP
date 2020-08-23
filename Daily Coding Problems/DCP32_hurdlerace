@@ -1,0 +1,16 @@
+/*
+https://www.hackerrank.com/challenges/the-hurdle-race/problem
+*/
+  static int hurdleRace(int k, int[] height) {
+        int maxheight=height[0];
+        for(int i=1;i<height.length;i++){
+            if(height[i]>maxheight){
+                maxheight=height[i];
+            }
+        }
+        if(maxheight<=k){
+            return 0;
+        }
+        else return maxheight-k;
+
+    }
