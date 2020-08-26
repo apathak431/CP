@@ -1,0 +1,14 @@
+/*
+https://www.hackerrank.com/challenges/strange-advertising/problem
+
+*/
+
+ static int viralAdvertising(int n) {
+        int sum=0;
+        double daypeople=5;
+        for(int i=1;i<=n;i++){
+            sum+=Math.floor(daypeople/2);
+            daypeople=Math.floor(daypeople/2)*3;
+        }
+        return sum;
+    }
