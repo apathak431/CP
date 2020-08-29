@@ -1,0 +1,8 @@
+https://www.hackerrank.com/challenges/30-arrays/problem
+
+
+String str="";
+        for (int i = n-1; i >= 0; i--) {
+            str+=arr[i];
+            str+=" ";
+        }
